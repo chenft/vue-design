@@ -1086,7 +1086,7 @@ Vue.options = {
 const res = Object.create(parentVal || null)
 ```
 
-你可以通过 `res.KeepAlive` 访问当 `KeepAlive` 对象，因为虽然 `res` 对象自身属性没有 `KeepAlive`，但是它的原型上有。
+你可以通过 `res.KeepAlive` 访问 `KeepAlive` 对象，因为虽然 `res` 对象自身属性没有 `KeepAlive`，但是它的原型上有。
 
 然后再经过 `return extend(res, childVal)` 这句话之后，`res` 变量将被添加 `ChildComponent` 属性，最终 `res` 如下：
 
